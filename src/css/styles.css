@@ -4,3 +4,17 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+.footer{
+
+
+}
+
+.footer.footer--primary{
+    background: rgb(214,153,232);
+    background: -moz-linear-gradient(90deg, rgba(214,153,232,1) 0%, rgba(79,53,170,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(214,153,232,1) 0%, rgba(79,53,170,1) 100%);
+    background: linear-gradient(90deg, rgba(214,153,232,1) 0%, rgba(79,53,170,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d699e8",endColorstr="#4f35aa",GradientType=1);
+    color: var(--white);
+}
