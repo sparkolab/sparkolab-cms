@@ -14,7 +14,7 @@
 }
 
   .btn.btn--primary{
-    padding: .75rem 3rem;
+    padding: .75rem 3rem 0.55rem;
     font-size: .875rem;
   }
 
@@ -26,4 +26,15 @@
     background-color: var(--purple-1);
     color: var(--white);
     box-shadow: none;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--purple-1);
+    font-family: var(--header-font);
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .btn.btn--style-one:hover{
+    color: var(--purple-1);
+    background-color: var(--white);
   }

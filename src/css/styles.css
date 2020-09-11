@@ -1,0 +1,6 @@
+body{
+    background-image: url(/img/rings-corner.png),url(/img/rings-edge.png);
+    background-position: 0 100%,right top -70%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

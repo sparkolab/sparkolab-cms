@@ -35,4 +35,8 @@
 	/* Miscelaneous */
 	--border-radius: .25rem;
 	--hover-transition: all 150ms ease;
+
+	/* Fonts */
+	--header-font: 'Josefin Sans', sans-serif;
+	--body-font: 'Poppins', sans-serif;
 }
