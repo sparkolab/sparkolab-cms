@@ -5,8 +5,12 @@
         <div class="flex-ns flewx-wrap">
 
             <div class="flex flex-column w-50-ns ph1-ns">
-                <h1 class="f3-l f2-m f3 mb3">{{.title}}</h1>
-                <p>{{.subtitle}}</p>
+                {{ if isset .Params "title" }}
+                <h1 class="f3-l f2-m f3 mb3">{{ index .Params "title"}}</h1>
+                {{ end }}
+                {{ if isset .Params "subtitle" }}
+                <p>{{ index .Params "subtitle"}}</p>
+                {{ end }}
             </div>
 
             <div class="flex w-50-ns ph1-ns">
