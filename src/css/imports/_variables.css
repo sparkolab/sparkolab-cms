@@ -39,4 +39,7 @@
 	/* Fonts */
 	--header-font: 'Josefin Sans', sans-serif;
 	--body-font: 'Poppins', sans-serif;
+
+	/* Heights */
+	--input-height: 3.25rem;
 }

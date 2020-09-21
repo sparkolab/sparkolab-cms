@@ -23,14 +23,6 @@ input, textarea {
   position: relative;
   transition: var(--hover-transition);
   z-index: 2;
-  &:focus {
-    background-color: var(--white);
-  }
-  &:focus + label {
-    opacity: 1;
-    pointer-events: auto;
-    transform: translateY(-120%);
-  }
 }
 
 ::-webkit-input-placeholder {
@@ -73,4 +65,41 @@ label
   line-height: 1;
   transition: var(--hover-transition);
   z-index: 2;
+}
+
+.form.form--newsletter input[type="email"]{
+  padding: var(--spacing-medium);
+  height: var(--input-height);
+  border-radius: 999px 0 0 999px;
+  background-color: var(--white);
+  border-top: 1px solid var(--primary);
+  border-left: 1px solid var(--primary);
+  border-bottom: 1px solid var(--primary);
+  border-right: none;
+  font-family: var(--header-font);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.form.form--newsletter input[type="submit"].btn{
+  padding: var(--spacing-medium);
+  height: var(--input-height);
+  border-radius: 0 999px 999px 0;
+  box-shadow: none;
+  border: 1px solid var(--white);
+  background-color: var(--white);
+  border-top: 1px solid var(--primary);
+  border-right: 1px solid var(--primary);
+  border-bottom: 1px solid var(--primary);
+  border-left: none;
+  font-family: var(--header-font);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.form.form--newsletter input[type="submit"].btn:hover{
+  background-color: var(--primary);
+  color: var(--white);
+  text-transform: uppercase;
+  cursor: pointer;
 }
