@@ -68,6 +68,10 @@ label
 }
 
 .form.form--newsletter input[type="email"]{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
   padding: var(--spacing-medium);
   height: var(--input-height);
   border-radius: 999px 0 0 999px;
