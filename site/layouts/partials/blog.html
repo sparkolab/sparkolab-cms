@@ -1,19 +1,20 @@
 <div class="pv4">
 	<div class="ph3 mw8 center">
 
-		<h2 class="f2 b lh-title mb3">Latest stories</h2>
+		<h2 class="f3 b lh-title tc mb4">Latest stories</h2>
 
-		<div class="w-100 flex-ns mhn1-ns flex-wrap mb3">
-			{{ range ( first 3 ( where .Site.Pages "Section" "blog" ).ByDate ) }}
-				<li>
-					<a href="{{ .Permalink }}">{{ .Title }}</a>
-					<p>{{ .Description }}</p>
-				</li>
+		<div class="w-80 center flex-ns mhn1-ns flex-wrap flex-column">
+			{{ range ( first 4 ( where .Site.RegularPages "Type" "blog" ).ByDate ) }}
+				<div class="article-grid-item tc w-100 mb5">
+					<h2 class="article-grid-item__title f4 tc"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+					<p class="article-grid-item__description tc">{{ .Description }}</p>
+					<a class="article-grid-item__link" href="{{ .Permalink }}">Read article</a>
+				</div>
 			{{ end }}
 		</div>
 
 		<div class="tc">
-			<a href="/blog" class="btn btn--primary btn--rounded btn--style-one">Read more</a>
+			<a href="/blog" class="btn btn--primary btn--rounded btn--style-one">View all</a>
 		</div>
 
 	</div>

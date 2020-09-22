@@ -18,3 +18,20 @@ body{
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d699e8",endColorstr="#4f35aa",GradientType=1);
     color: var(--white);
 }
+
+.article-grid-item{ }
+
+    .article-grid-item__title > a{
+        color: var(--primary);
+    }
+
+    .article-grid-item__description{
+        margin: var(--spacing-medium) auto;
+    }
+
+    .article-grid-item__link{
+        /* color: var(--primary); */
+        font-family: var(--header-font);
+        font-weight: 700;
+        text-transform: uppercase;
+    }
