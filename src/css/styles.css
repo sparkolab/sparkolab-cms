@@ -43,3 +43,10 @@ body{
         font-weight: 700;
         text-transform: uppercase;
     }
+
+.header.header--primary{
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+    background-color: var(--white);
+}

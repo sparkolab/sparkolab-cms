@@ -2,6 +2,9 @@
   text-decoration: none;
   transition: var(--hover-transition);
   color: inherit;
+  font-family: var(--header-font);
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .link:link,
