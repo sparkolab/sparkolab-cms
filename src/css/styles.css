@@ -21,6 +21,14 @@ body{
 
 .article-grid-item{ }
 
+    .article-grid-item__reading-time{
+        margin: var(--spacing-small) auto;
+    }
+        .article-grid-item__reading-time small{
+            font-size: smaller;
+            font-weight: 600;
+        }
+
     .article-grid-item__title > a{
         color: var(--primary);
     }
